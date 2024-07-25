@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: $font-main;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  border-style: none;
+  display: block;
+}
+p {
+  margin: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.container-fluid {
+  margin: 0 auto;
+}
+.container {
+  max-width: $media-desktop-min;
+  margin: 0 auto;
+  padding: 0 30px;
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+h1,
+.h1 {
+  font-size: 36px;
+  line-height: 36px;
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+h3,
+.h3 {
+  font-size: 24px;
+  line-height: 37px;
+  color: #111;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+h2,
+.h2 {
+  font-size: 36px;
+  color: #111;
+  @media screen and (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}

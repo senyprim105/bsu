@@ -1,0 +1,62 @@
+.tabset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  &__controls{
+    display: contents;
+  }
+ 
+  &__control {
+    position: absolute;
+    left: -200vw; //Прячем контролы
+
+    &--left:checked ~ .tabset__panels > .tabset__panel--left,
+    &--right:checked ~ .tabset__panels > .tabset__panel--right
+    {
+      display: block; //показываем содержимое выбраного контрола
+    }
+
+    &--left {
+    }
+
+    &--right {
+    }
+  }
+
+  &__label {
+    position: relative;
+    padding: 20px;
+    font-size: 36px;
+    display: inline-block;
+    cursor: pointer;
+
+   
+  
+    &--left {
+    }
+
+    &--right {
+      margin-left: auto;
+    }
+  }
+
+  &__panels {
+    width: 100%;
+  }
+  &__panel {
+    display: none;
+  }
+
+  
+
+  &__panel-title {
+  }
+
+  &__panel-content {
+  }
+  &__panel__inner{
+
+  }
+}
+

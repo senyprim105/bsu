@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My cat energy | main</title>
+
+    <link rel="stylesheet" href="./css/lib.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- SVG-спрайт -->
+    <!-- <div style="display: none">
+    <include src="build/img/inline.svg"></include>
+  </div> -->
+    <div class="page page__index container-fluid">
+      <header class="page__index-header header">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="main-nav main-nav--no-js">
+              <div class="main-nav__inner">
+                <!-- <div class="main-nav__logo-inner">
+                <a href="#" class="main-nav__logo">
+                  <img src="./img/logo.svg" alt="Логотип: Кэт энерджи" /> 
+                </a>
+                <button class="main-nav__toggle">
+                  <span></span>
+                </button>
+              </div> -->
+                <ul class="main-nav__menu main-nav__menu--no-js">
+                  <li class="main-nav__item main-nav__item--active">
+                    <a href="" class="main-nav__link">О компании</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Услуги</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Цены</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="" class="main-nav__link">Контакты</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <div class="header__banner">
+              <h1 class="header__title">Контора адвокатов "ФИДЕС"</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="services">
+        <div class="container">
+          <div class="services__inner">
+            <h2 class="services__title"></h2>
+            <div class="services__tabset">
+              <div class="tabset">
+                  <input
+                    class="tabset__control tabset__control--left"
+                    type="radio"
+                    name="tabset"
+                    id="tab1"
+                    aria-controls="Для юридических лиц"
+                    checked
+                  />
+                  <label class="tabset__label tabset__label--left" for="tab1"
+                    >Для юридических лиц</label
+                  >
+
+                  <input
+                    class="tabset__control tabset__control--right"
+                    type="radio"
+                    name="tabset"
+                    id="tab2"
+                    aria-controls="Для фицических лиц"
+                  />
+                  <label class="tabset__label tabset__label--right" for="tab2"
+                    >Для физических лиц</label
+                  >
+
+                <div class="tabset__panels">
+                  <div class="tabset__panel tabset__panel--left">
+                    <div class="tabset_panel-inner">
+                      <h3 class="tabset__panel-title"></h3>
+                      <div class="tabset__panel-content">
+                        <ul class="services__list">
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для юридического лица 1</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для юридического лица 2</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для юридического лица 3</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для юридического лица 4</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для юридического лица 5</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tabset__panel tabset__panel--right">
+                    <div class="tabset_panel-inner">
+                      <h3 class="tabset__panel-title"></h3>
+                      <div class="tabset__panel-content">
+                        <ul class="services__list">
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для физического лица 1</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для физического лица 2</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для физического лица 3</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для физического лица 4</a
+                            >
+                          </li>
+                          <li class="services__list-item">
+                            <a href="#" class="services__link"
+                              >Услуга для физического лица 5</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <footer class="footer container-fluid page">
+        <section class="footer__title">
+          <h2 class="footer__header">приглашаем к сотрудничеству дилеров!</h2>
+          <div class="footer__address">
+            <span class="footer__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="footer__city">Санкт-Петербург</span>
+          </div>
+        </section>
+        <section class="map">
+          <h2 class="visually-hidden">Мы на карте</h2>
+          <div class="map__inner">
+            <picture class="map__image">
+              <source
+                srcset="./img/map@1x.webp 1x, ./img/map@2x.webp 2x"
+                media="(min-width: 1140px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./img/map-tablet@1x.webp 1x,
+                  ./img/map-tablet@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./img/map-mobile@1x.webp 1x,
+                  ./img/map-mobile@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="./img/map@1x.jpg 1x, ./img/map@2x.jpg 2x"
+                media="(min-width: 1140px)"
+              />
+              <source
+                srcset="./img/map-tablet@1x.jpg 1x, ./img/map-tablet@2x.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="./img/map-mobile@1x.jpg"
+                srcset="./img/map-mobile@1x.jpg 2x"
+                alt="Карта"
+              />
+            </picture>
+            <div id="map"></div>
+          </div>
+        </section>
+        <div class="footer__links">
+          <div class="footer__logo-wrapper">
+            <a class="footer__logo" href="#">
+              <img
+                src="./img/sprite-logo-text.svg"
+                width="128"
+                height="24"
+                alt="Логотип: Кэт энерджи"
+              />
+            </a>
+          </div>
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a
+                href="#"
+                class="footer__social-link social__link--vk social__link"
+              >
+                <svg
+                  class="footer__social-image"
+                  width="100%"
+                  height="100%"
+                  focusable="false"
+                >
+                  <use xlink:href="#inline-vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="#"
+                class="footer__social-link social__link social__link--youtube"
+              >
+                <svg
+                  class="footer__social-image"
+                  width="18"
+                  height="18"
+                  focusable="false"
+                >
+                  <use xlink:href="#inline-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a
+                href="#"
+                class="footer__social-link social__link--fb social__link"
+              >
+                <svg
+                  class="footer__social-image"
+                  focusable="false"
+                  width="100%"
+                  height="100%"
+                >
+                  <use xlink:href="#inline-facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__develop">
+            <a href="#" class="footer__develop-link">
+              <span class="footer__develop-text"> HTML Academy </span>
+              <svg width="28" height="35" focusable="false">
+                <use xlink:href="#inline-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </footer> -->
+    </div>
+
+    <script
+      src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=73b0fcb8-28a2-44bf-81e2-9cf7964c295e"
+      type="text/javascript"
+    ></script>
+    <script src="js/lib.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

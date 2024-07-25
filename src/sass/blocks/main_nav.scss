@@ -1,0 +1,55 @@
+.main-nav {
+  &--no-js {
+  }
+
+  &__inner {
+  }
+
+  &__logo-inner {
+  }
+
+  &__logo {
+  }
+
+  &__toggle {
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    text-transform: uppercase;
+    font-size: 16px;
+
+    &--no-js {
+    }
+  }
+
+  &__item {
+	position: relative;
+    & + & {
+      margin-right: 20px;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+      width: 0; /*задаём длинну линии до наведения курсора*/
+      height: 2px; /*задаём ширину линии*/
+      background-color: #00a650; /*задаём цвет линии*/
+      transition: width 0.3s ease-out; /*задаём время анимации*/
+    }
+    &--active {
+    }
+    &:hover::after,
+    &:focus:after {
+      width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+    }
+  }
+
+  &__link {
+  }
+}

@@ -1,0 +1,18 @@
+.header {
+    background-image: url("./../../img/background_top.jpg");
+    min-height: 500px;
+    
+    background-size: cover;
+    padding-top: 20px;
+    &__inner{
+        
+    }
+    &__banner{
+        padding: 50px 20px 50px;
+    }
+    &__title {
+        margin-top: 100px;
+        text-align: center;
+    }
+
+}
